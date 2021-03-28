@@ -10,11 +10,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <link rel="stylesheet" href="css/venobox.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!--===========preloader part goes here============-->
+
+    <div class="preloader">
+        <div class="load">
+            <hr/><hr/><hr/><hr/>
+          </div>
+    </div>
     <!--===========Navbar part goes here============-->
-    <nav>
+    <nav class="nav">
         <div class="container">
             <div class="nav_main">
                 
@@ -23,11 +33,11 @@
                 </div>
                 <div class="menu">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">blog</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="#banner">Home</a></li>
+                        <li><a href="#about">Service</a></li>
+                        <li><a href="#photograpy">work</a></li>
+                        <li><a href="#team">blog</a></li>
+                        <li><a href="#footer">contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +59,7 @@
 
     </section>
     <!--===========About part goes here============-->
-    <section>
+    <section id="about">
         <div class="container">
             <div class="head">
                <div class="head_text">
@@ -95,31 +105,32 @@
         <div class="container">
             <div class="funfact_main">
                 <div class="funfact_item">
-                    <h2>42</h2>
+                    <h2 class="counter">472</h2>
                     <p>Web Design Projects</p>
                 </div>
                 <div class="funfact_item">
-                    <h2>123</h2>
+                    <h2 class="counter">1323</h2>
                     <p>happy client</p>
                 </div>
                 <div class="funfact_item">
-                    <h2>15</h2>
+                    <h2 class="counter">335</h2>
                     <p>award winner</p>
                 </div>
                 <div class="funfact_item">
-                    <h2>99</h2>
+                    <h2 class="counter">990</h2>
                     <p>cup of coffee</p>
                 </div>
                 <div class="funfact_item">
-                    <h2>24</h2>
+                    <h2 class="counter">2400</h2>
                     <p>members</p>
                 </div>
             </div>
             
 
         </div>
+      
     </section>
-    <section>
+    <section id="photograpy">
         <div class="container">
             <div class="head">
                 <div class="head_text">
@@ -207,7 +218,7 @@
         </div>
     </section>
     <!--===========Team  part goes here============-->
-    <section>
+    <section id="team">
         <div class="container">
             <div class="head">
                 <div class="head_text">
@@ -270,7 +281,7 @@
                  </div>
              </div>
         </div>     
-            
+    </section>        
     <!--===========Gallery part goes here============-->
     <section id="gallery">
         
@@ -288,7 +299,10 @@
                          <div class="gal_overly">
                             
                                  <div class="gal_info">
-                                    <img src="Images/gal_icon.png" alt="">
+                                    
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
                                     <h1>creatively designed</h1>
                                     <p>Lorem ipsum dolor sit</p>
                                  </div>
@@ -300,7 +314,10 @@
                          <div class="gal_overly">
                             
                                  <div class="gal_info">
-                                    <img src="Images/gal_icon.png" alt="">
+                                     
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal_5.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
                                     <h1>creatively designed</h1>
                                     <p>Lorem ipsum dolor sit</p>
                                  </div>
@@ -314,7 +331,11 @@
                          <div class="gal_overly">
                             
                                  <div class="gal_info">
-                                    <img src="Images/gal_icon.png" alt="">
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal_1.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
+                                        
+                                    
                                     <h1>creatively designed</h1>
                                     <p>Lorem ipsum dolor sit</p>
                                  </div>
@@ -326,7 +347,9 @@
                          <div class="gal_overly">
                             
                                  <div class="gal_info">
-                                    <img src="Images/gal_icon.png" alt="">
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal_6.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
                                     <h1>creatively designed</h1>
                                     <p>Lorem ipsum dolor sit</p>
                                  </div>
@@ -340,7 +363,9 @@
                          <div class="gal_overly">
                             
                                  <div class="gal_info">
-                                    <img src="Images/gal_icon.png" alt="">
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal_3.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
                                     <h1>creatively designed</h1>
                                     <p>Lorem ipsum dolor sit</p>
                                  </div>
@@ -354,7 +379,9 @@
                         <div class="gal_overly">
                            
                                 <div class="gal_info">
-                                   <img src="Images/gal_icon.png" alt="">
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal_4.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
                                    <h1>creatively designed</h1>
                                    <p>Lorem ipsum dolor sit</p>
                                 </div>
@@ -366,7 +393,9 @@
                         <div class="gal_overly">
                            
                                 <div class="gal_info">
-                                   <img src="Images/gal_icon.png" alt="">
+                                    <a class="venobox" data-gall="gallery01" href="Images/gal_7.png">
+                                        <img src="Images/gal_icon.png" alt="gal_icon">
+                                    </a>
                                    <h1>creatively designed</h1>
                                    <p>Lorem ipsum dolor sit</p>
                                 </div>
@@ -377,8 +406,41 @@
              </div>
         
     </section>
+    <!--===========Funfact part goes here============-->
+    <section id="countdown">
+        <div class="container">
+            <div class="head_countdown"><h1>countdown to my birthday :</h1></div>
+            <div class="countdown_main">
+                <div class="countdown_item">
+                    <h2 id="days">00</h2>
+                    <p>Day</p>
+                </div>
+                <div class="funfact_item">
+                    <h2 id="hours">00</h2>
+                    <p>Hours</p>
+                </div>
+                <div class="funfact_item">
+                    <h2 id="minutes">00</h2>
+                    <p>Minutes</p>
+                </div>
+                <div class="funfact_item">
+                    <h2 id="seconds">00</h2>
+                    <p>Seconds</p>
+                </div>
+                
+            </div>
+            
+
+        </div>
+      
+    </section>  
     <!--===========footer part goes here============-->
-    <footer>
+    <a href="#" class="back-to-top">
+        <i class="fa fa-chevron-up ">
+
+        </i>
+    </a>
+    <footer id="footer">
         <div class="container">
             <div class="footer_main">
                 <div class="footer_item">
@@ -490,6 +552,14 @@
 
     </footer>
     <!--===========Navbar part goes here============-->
+
+    <script src="JS/jquery-1.12.4.min.js"></script>
+    
+    <script src="JS/lightbox.min.js "></script>
+    <script src="JS/venobox.min.js"></script>
+    <script src="JS/jquery.counterup.min.js"></script>
+    <script src="JS/waypoints.min.js"></script>
+    <script src="JS/custom.js"></script>
     
 </body>
 </html>

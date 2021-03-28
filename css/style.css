@@ -13,12 +13,23 @@ ul,ol{
     clear: both;
 }
 /*=============Navbar css part goes here============*/
-nav{
+.nav{
+    
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 9;
+    transition: all linear .3s;
+}
+.bg {
+    background-color: #f38181e6;
+    animation: bg 2s;
+}
+@keyframes bg{
+    
+    from{ top:-50px}
+    to{top:0;}
 }
 .container {
     width: 1200px;
@@ -72,9 +83,7 @@ nav{
     width: 100%;
 }
 /*Banner part css goes here*/
-#banner {
-    margin-bottom: 68px;
-}
+
 .banner_img {
     background: url(../Images/banner.jpg)no-repeat;
     background-size: cover;
@@ -86,7 +95,7 @@ nav{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(rgba(243, 129, 129,0.9), rgba(252, 227, 138,0.9));
+    background-image: linear-gradient(#f38181e6, rgba(252, 227, 138,0.9));
     top: 0;
     left: 0;
     display: flex;
@@ -137,6 +146,9 @@ nav{
     text-transform: uppercase;
 
 }
+#about {
+    padding-top: 68px;
+}
 .head {
     display: flex;
     justify-content: center;
@@ -158,10 +170,10 @@ nav{
     font-size: 30px;
     font-weight: 700;
     color: #333333;
-    padding-bottom: 41px;
+    padding-bottom: 37px;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 91px;
+    margin-bottom: 23px;
 
 }
 .head_text h4::after {
@@ -182,12 +194,13 @@ nav{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: #9999;
-    margin-bottom: 104px;
+    color: #999999;
+    
     padding: 0 102px;
     
 }
 .head_img {
+    margin-top: 104px;
     display: flex;
     justify-content: space-between;
 }
@@ -230,7 +243,7 @@ nav{
    
 /*=============funfact css part goes here============*/
 #funfact {
-    margin: 80px 0 80px 0;
+    margin: 80px 0 0 0;
     padding: 56px 0;
     background-color: #95e1d3;
 }
@@ -255,7 +268,12 @@ nav{
 .funfact_main {
     display: flex;
 }
+/*===================== Photography parts goes here =================== */
+#photograpy {
+    padding-top: 80px;
+}
 .service_main {
+    margin-top: 66px;
     display: flex;
     justify-content: space-between;
 }
@@ -294,8 +312,9 @@ nav{
 /*=============freedback css part goes here============*/
 #freedback {
     background-color: #f8f8f8;
+    margin-top: 100px;
     padding: 54px 0;
-    margin: 76px 0;
+    
     position: relative;
 }
 .freedback {
@@ -360,7 +379,11 @@ nav{
     transform: translateY(-50%);
 }
 /*=============Team css part goes here============*/
+#team {
+    padding-top: 76px;
+}
 .team_main {
+    margin-top: 92px;
     display: flex;
     justify-content: space-between;
     
@@ -435,7 +458,7 @@ nav{
 }
 .gallery_main {
     display: flex;
-    margin-top: -29px;
+    margin-top: 102px;
     
 }
 .gallery_item { 
@@ -697,8 +720,96 @@ form ::placeholder {
     padding-top: 25px;
 }
 
+/*============= Back to top css part goes here============*/
+.back-to-top {
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    z-index: 9999;
+    display: none;
+}
+.back-to-top i { 
+    width: 50px;
+    height: 50px;
+    background-color: #f38181e6;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+}
+/*=============preloader css part goes here============*/
+
+.preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(8, 2, 1);
+    z-index: 999999;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.load{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);
+    /*change these sizes to fit into your project*/
+    width:100px;
+    height:100px;
+  }
+  .load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}
+  
+  .load :first-child{background:#19A68C;animation-delay:-1.5s}
+  .load :nth-child(2){background:#F63D3A;animation-delay:-1s}
+  .load :nth-child(3){background:#FDA543;animation-delay:-0.5s}
+  .load :last-child{background:#193B48}
+  
+  @keyframes spin{
+    0%,100%{transform:translate(0)}
+    25%{transform:translate(160%)}
+    50%{transform:translate(160%, 160%)}
+    75%{transform:translate(0, 160%)}
+  }
 /*=============Navbar css part goes here============*/
-/*=============Navbar css part goes here============*/
-/*=============Navbar css part goes here============*/
+#countdown{
+    margin: 80px 0 0 0;
+    padding: 56px 0;
+    background-image: linear-gradient(rgba(243, 129, 129,0.9), rgba(252, 227, 138, 0.902));
+}
+.countdown_main {
+    display: flex;
+    justify-content: center;
+}
+.countdown_item {
+    width: 240px;
+    text-align: center;
+}
+
+.countdown_item h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+    color: #ffffff;
+
+}
+.countdown_item p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+
+}
+.head_countdown {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
 /*=============Navbar css part goes here============*/
 /*=============Navbar css part goes here============*/
